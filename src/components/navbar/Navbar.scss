@@ -1,0 +1,110 @@
+@import '../../app/globals.css';
+
+.navbar{
+    width: 100%;
+    background-color: var(--gray);
+    .navbarContents{
+        display: flex;
+        justify-content: space-between;
+        .logoContainer{
+            max-width: 150px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 550px;
+            color: white;
+            label{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                border-radius: 15px;
+                overflow: hidden;
+                background-color: var(--green);
+                position: relative;
+                input{
+                    padding-left: 20px;
+                    background-color: inherit;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+                .searchCategories{
+                    position: absolute;
+                    right: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    z-index: 10;
+                    .all{
+                        width: 120px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        border-left: 1px solid white;
+                        padding: 0 20px;
+                        font-size: 12px;
+                    }
+                    .icon{
+                        height: 100%;
+                        width: max-content;
+                        background-color: var(--orange);
+                        display: grid;
+                        place-items: center;
+                        padding: 0 15px;
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .login{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .loginDetails{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    font-size: 20px;
+                }
+            }
+            .navCart{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid gray;
+                padding: 5px;
+                border-radius: 5px;
+                .icon{
+                    font-size: 25px
+                }
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        font-size: 12px;
+                    }
+                    strong{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
